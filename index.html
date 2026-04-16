@@ -4,14 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viknesh | Data Scientist Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
-    header { padding: 40px; text-align: center; background: #1e293b; }
-    h1 { margin: 0; font-size: 36px; }
-    section { padding: 40px; max-width: 900px; margin: auto; }
-    .project { background: #1e293b; padding: 20px; margin-bottom: 20px; border-radius: 10px; }
-    a { color: #38bdf8; text-decoration: none; }
-    footer { text-align: center; padding: 20px; background: #1e293b; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0f172a; color: #e2e8f0; }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+    }
+
+    header h1 { font-size: 48px; font-weight: 700; }
+    header p { margin-top: 10px; font-size: 18px; color: #94a3b8; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    section { max-width: 1100px; margin: auto; padding: 60px 20px; }
+
+    h2 { margin-bottom: 30px; font-size: 28px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .card h3 { margin-bottom: 10px; }
+    .card p { color: #94a3b8; font-size: 14px; }
+
+    .skills span {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      background: #1e293b;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1e293b;
+      color: #94a3b8;
+    }
+
+    a { text-decoration: none; color: inherit; }
   </style>
 </head>
 <body>
@@ -19,33 +77,40 @@
 <header>
   <h1>Hi, I'm Viknesh</h1>
   <p>Aspiring Data Scientist | Machine Learning Enthusiast</p>
+  <a class="btn" href="https://github.com/Viknesh09/data-portfolio">View GitHub</a>
 </header>
 
 <section>
   <h2>🚀 Projects</h2>
+  <div class="grid">
 
-  <div class="project">
-    <h3>Crypto & Oil Price Analysis</h3>
-    <p>Analyzed relationships between cryptocurrency and oil markets using Python and SQL.</p>
-    <a href="https://github.com/Viknesh09/data-portfolio">View Project</a>
-  </div>
+    <div class="card">
+      <h3>Crypto & Oil Price Analysis</h3>
+      <p>Analyzed relationships between cryptocurrency and oil markets using Python and SQL.</p>
+    </div>
 
-  <div class="project">
-    <h3>Global Literacy Analysis</h3>
-    <p>Built interactive dashboards to explore global literacy trends.</p>
-    <a href="https://github.com/Viknesh09/data-portfolio">View Project</a>
-  </div>
+    <div class="card">
+      <h3>Global Literacy Analysis</h3>
+      <p>Built interactive dashboards to explore global literacy trends.</p>
+    </div>
 
-  <div class="project">
-    <h3>EcoType Classification</h3>
-    <p>Machine learning model to classify forest cover types.</p>
-    <a href="https://github.com/Viknesh09/data-portfolio">View Project</a>
+    <div class="card">
+      <h3>EcoType Classification</h3>
+      <p>Machine learning model to classify forest cover types.</p>
+    </div>
+
   </div>
 </section>
 
 <section>
   <h2>🛠 Skills</h2>
-  <p>Python, SQL, Pandas, Machine Learning, Streamlit</p>
+  <div class="skills">
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Pandas</span>
+    <span>Machine Learning</span>
+    <span>Streamlit</span>
+  </div>
 </section>
 
 <section>
@@ -55,7 +120,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Viknesh</p>
+  <p>© 2026 Viknesh | Built with ❤️</p>
 </footer>
 
 </body>
