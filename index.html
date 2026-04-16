@@ -38,11 +38,14 @@
       gap: 20px;
     }
 
+    .card-link { text-decoration: none; color: inherit; }
+
     .card {
       background: #1e293b;
       padding: 20px;
       border-radius: 16px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
     }
 
     .card:hover {
@@ -68,8 +71,6 @@
       background: #1e293b;
       color: #94a3b8;
     }
-
-    a { text-decoration: none; color: inherit; }
   </style>
 </head>
 <body>
@@ -77,27 +78,33 @@
 <header>
   <h1>Hi, I'm Viknesh</h1>
   <p>Aspiring Data Scientist | Machine Learning Enthusiast</p>
-  <a class="btn" href="https://github.com/Viknesh09/data-portfolio">View GitHub</a>
+  <a class="btn" href="https://github.com/Viknesh09/data-portfolio" target="_blank">View GitHub</a>
 </header>
 
 <section>
   <h2>🚀 Projects</h2>
   <div class="grid">
 
-    <div class="card">
-      <h3>Crypto & Oil Price Analysis</h3>
-      <p>Analyzed relationships between cryptocurrency and oil markets using Python and SQL.</p>
-    </div>
+    <a class="card-link" href="https://github.com/Viknesh09/data-portfolio/tree/main/crypto-oil-price-analysis" target="_blank">
+      <div class="card">
+        <h3>Crypto & Oil Price Analysis</h3>
+        <p>Analyzed relationships between cryptocurrency and oil markets using Python and SQL.</p>
+      </div>
+    </a>
 
-    <div class="card">
-      <h3>Global Literacy Analysis</h3>
-      <p>Built interactive dashboards to explore global literacy trends.</p>
-    </div>
+    <a class="card-link" href="https://github.com/Viknesh09/data-portfolio/tree/main/global-literacy-analysis" target="_blank">
+      <div class="card">
+        <h3>Global Literacy Analysis</h3>
+        <p>Built interactive dashboards to explore global literacy trends.</p>
+      </div>
+    </a>
 
-    <div class="card">
-      <h3>EcoType Classification</h3>
-      <p>Machine learning model to classify forest cover types.</p>
-    </div>
+    <a class="card-link" href="https://github.com/Viknesh09/data-portfolio/tree/main/ecotype-classification" target="_blank">
+      <div class="card">
+        <h3>EcoType Classification</h3>
+        <p>Machine learning model to classify forest cover types.</p>
+      </div>
+    </a>
 
   </div>
 </section>
@@ -116,7 +123,7 @@
 <section>
   <h2>📫 Contact</h2>
   <p>Email: vikneshkarunanidhi@gmail.com</p>
-  <p><a href="https://www.linkedin.com/in/viknesh-karunanidhi-25b86b209/">LinkedIn</a></p>
+  <p><a href="https://www.linkedin.com/in/viknesh-karunanidhi-25b86b209/" target="_blank">LinkedIn</a></p>
 </section>
 
 <footer>
