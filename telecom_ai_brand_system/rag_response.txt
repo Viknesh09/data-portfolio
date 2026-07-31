@@ -1,0 +1,25 @@
+query = "My broadband activation is delayed"
+
+context = retrieve_context(query)
+
+response = generate_response(
+    query,
+    context
+)
+
+print(response)
+
+# Save response
+with open("rag_response.txt", "w", encoding="utf-8") as f:
+    f.write("Customer Query:\n")
+    f.write(query)
+    f.write("\n\n")
+
+    f.write("Retrieved Context:\n")
+    f.write(context)
+    f.write("\n\n")
+
+    f.write("AI Response:\n")
+    f.write(response)
+
+print("Response saved successfully!")

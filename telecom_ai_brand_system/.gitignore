@@ -1,0 +1,28 @@
+# Virtual environment
+telecom/
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Hugging Face checkpoints
+results/
+checkpoint-*/
+
+# Models
+models/distilbert_model/
+
+# PyTorch
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Datasets
+*.zip
+*.csv
